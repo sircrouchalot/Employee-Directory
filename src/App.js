@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.css";
+
 import EmployeeTable from "./components/EmployeeTable";
 import NavBar from "./components/NavBar";
+
 
 function App() {
   var employeeList = [
@@ -44,7 +46,7 @@ function App() {
 
   return (
     <div className="container text-center">
-      <NavBar />
+      <NavBar employees={employeeList} />
       <EmployeeTable employees={employeeList} />
     </div>
   );
